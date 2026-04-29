@@ -1,9 +1,6 @@
+# 1. 팀소개
 
-
-# 렌트카 고객분석 서비스
-
-- 📅 **기간**: 2026.03.27 ~ 2026.03.31
-- 🧑‍🧑‍🧒 **팀원**: 정형섭, 오형호, 고현아, 김세희
+### 팀명: Simple is Best
 
 <table>
   <tr>
@@ -23,7 +20,7 @@
         <sub><b>오형호</b></sub>
       </a>
       <br />
-      Frontend
+      Frontend, 발표
     </td>
     <td align="center">
       <a href="https://github.com/hellene0708-cyber">
@@ -32,7 +29,7 @@
         <sub><b>고현아</b></sub>
       </a>
       <br />
-      DB
+      DB, 자료조사
     </td>
     <td align="center">
       <a href="https://github.com/kimsahee0401271111-collab">
@@ -41,149 +38,116 @@
         <sub><b>김세희</b></sub>
       </a>
       <br />
-      DB
+      DB, 자료조사
     </td>
   </tr>
 </table>
 
 <br/>
+<br/>
 
----
-## 🗂️ 프로젝트 개요
-- 렌터카 업체 FAQ를 통합하여 기존 고객의 불편사항과 니즈를 분석하고, 공공데이터(자동차 등록현황, 사고 다발지역)를 활용해 잠재 수요를 도출한 뒤 Streamlit 기반 시각화 대시보드를 구현한 프로젝트입니다.
+# 2. 프로젝트 개요
+### 2.1. 프로젝트 명
 
-<br>
+렌터카 고객 분석 서비스
 
----
-## 💡 프로젝트 목표
+### 2.2. 프로젝트 소개
 
-- FAQ 통합을 통한 기존 고객 문의 유형 및 니즈 파악 기반 마련
-- 공공데이터 기반 렌터카 수요 지역 분석 및 잠재 고객 도출
-- 데이터 수집·정제 및 시각화 구현
+렌터카 업체의 FAQ 데이터를 통합하여 기존 고객의 불편사항과 니즈를 분석하고,  
+공공데이터(자동차 등록 현황, 사고 다발 지역)를 활용해 잠재 수요를 도출한 뒤  
+Streamlit 기반의 데이터 시각화를 구현한 프로젝트이다.
 
-<br>
+### 2.3. 프로젝트 필요성(배경)
 
----
-## 📌 문제 정의
-> **"렌터카는 사고 다발지역과, 아직 구매력이 약한 젊은 20~30대가 많이 이용하지 않을까?"**
+렌터카 관련 고객 데이터(FAQ)와 공공데이터가 분산되어 개별적으로 활용되고 있어,  
+렌터카 수요와 고객 니즈를 종합적으로 파악하기 어렵다.  
+이에 따라 데이터를 통합 분석하여 보다 정확한 수요 예측과 고객 이해가 필요하다.
 
-본 프로젝트에서는 사고 발생건수와 지역별 자동차 등록자료를 기반으로 잠재적 렌터카 수요가 높은 지역을 분석하고 예측한다.  
-아울러 렌터카 업체 FAQ를 통합하여 기존 고객의 문의 유형과 불편사항을 파악하고, 서비스 개선 및 고객 니즈 도출을 위한 기반을 마련한다.
+### 2.4. 프로젝트 목표
 
-<br>
+분산된 고객 데이터와 공공데이터를 통합 분석하여 렌터카 수요와 고객 니즈를 도출하고,  
+데이터 기반의 고객 유치 전략 수립을 가능하게 한다.
 
----
-## 💡 시스템 목표
-> **"수집데이터의 활용 "**
+<br/>
+<br/>
 
-렌터카는 사고 다발지역 과 자동차 등록댓수가 많은 지역을 확인하여, 구매가능성이 높은 지역을 선정해, 적극적인 고객유치 전략을 짠다.
-
-<br>
-
----
-## 🔧 기술 스택
+# 3. 🔧 기술 스택
  
-| 구분 | 기술 |
-|---|---|
-| 언어 | Python |
-| 시각화 | Streamlit |
-| 데이터베이스 | MySQL |
+<img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/>
+<img src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/BeautifulSoup-000000"/>
+<img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white"/>
+
+<br/>
+<br/>
+
+# 4. WBS
+
+<img width="550" height="500" alt="erd" src="src/resources/img/wbs.png" />
+<br>
+<br>
+
+# 5. 요구사항 명세서
 
 <br>
+<br>
+
+# 6. ERD
+<img width="550" height="500" alt="erd" src="src/resources/img/erd_info.png" />
+
+<br>
+<br>
+
+# 7. 주요 프로시저
+
+1. **FAQ 데이터 수집**
+   - 렌터카 업체별 FAQ 데이터를 수집한다.
+   - 수집한 FAQ를 통합하여 고객 문의 데이터를 구성한다.
+
+2. **공공데이터 수집**
+   - 자동차 등록 현황, 사고 다발지역 데이터를 수집한다.
+   - 지역별 렌터카 수요 분석에 활용할 데이터를 정리한다.
+
+3. **데이터 저장 및 전처리**
+   - 수집한 데이터를 MySQL에 저장한다.
+   - 분석에 필요한 컬럼을 정리하고 결측값, 중복값 등을 처리한다.
+
+4. **데이터 분석**
+   - FAQ 기반으로 기존 고객의 문의 유형과 불편사항을 분석한다.
+   - 공공데이터 기반으로 잠재 렌터카 수요가 높은 지역을 분석한다.
+
+5. **시각화 구현**
+   - Streamlit을 활용하여 분석 결과를 대시보드 형태로 구현한다.
+   - FAQ 분석 결과, 자동차 등록 현황, 사고 현황 등을 화면에서 확인할 수 있도록 구성한다.
+<br>
+<br>
+
+# 8. 수행결과(테스트/시연 페이지)
+
+### 📌 렌터카 통합 FAQ
+![렌터카 통합 FAQ](src/resources/img/result1.png)
 
 ---
-<!-- 추후 작성 -->
-<!-- ## 🏷️ 활용 데이터
-| 데이터 | 출처 | 활용 목적 |
-|---|---|---|
-| 자동차 신규등록정보 | 공공데이터 포털 (한국교통안전공단) | 등록자의 성별 · 나이 · 차종 · 날짜를 수집하여 차트와 표로 표시 |
-| 정책 보도자료 | 기후에너지환경부 (mcee.go.kr) | 보도자료 내용을 수집하여 워드클라우드 이미지 생성에 사용 |
-| 월별 전기차 등록대수 | 한국스마트그리드협회 charge info | 전기차 등록대수와 뉴스 수의 관계 분석에 사용 |
-| 전기차 정책 뉴스 | 네이버 뉴스 | 월별 전기차 보조금 뉴스 수를 수집하여 관계 분석에 사용 |
-| FAQ | 기아 · 한국전력 kepco · 현대자동차 · 테슬라 공식 블로그 | FAQ 내용을 수집하여 통합 FAQ 표시에 사용 | -->
 
-<br>
+### 📌 자동차 등록 현황
+![자동차 등록 현황](src/resources/img/result2.png)
 
 ---
-## 📋 ERD 다이어그램
-<!-- <img width="441" height="535" alt="erd" src="src/resources/img/erd_info.png" /> -->
 
-
-<br>
-
-```
-
-project/
-│
-├── src/
-│   ├── modules/
-│   │   ├── crawling_module.py
-│   │   ├── db_connect_module.py
-│   │   └── streamlit_module.py
-│   │
-│   ├── resources/
-│   │   ├── csv/
-│   │   │   ├── 교통사고.csv
-│   │   │   ├── 롯데렌터카_faq.csv
-│   │   │   ├── 자동차등록수.csv
-│   │   │   ├── 현대캐피탈렌터카_faq.csv
-│   │   │   ├── sample.csv
-│   │   │   └── SK렌터카_faq.csv
-│   │   ├── img/
-│   │   │   ├── db_connection_info.png
-│   │   │   ├── erd_info.png
-│   │   │   ├── profile1.png
-│   │   │   ├── profile2.png
-│   │   │   ├── profile3.png
-│   │   │   ├── profile4.png
-│   │   │   ├── erd_info.png
-│   │   │   └── streamlit_run_info.png
-│   │   ├── sql/
-│   │   │   └── ddldml.sql
-│   │   │   
-│   └── views/
-│       ├── analysis/
-│       │   ├── new_cust/
-│       │   │   ├── car_acc.py
-│       │   │   └── car_reg.py 
-│       │   │
-│       │   └── old_cust/
-│       │       └── rental_car_faq.py
-│       │   
-│       └── sys_mg/
-│           └── crawling_mg.py
-│
-├── app.py               # 실행모듈
-├── guide.md             # 개발자 가이드 md
-└── README.md            # 프로젝트 소개
-
-
-```
+### 📌 자동차 사고 현황
+![자동차 사고 현황](src/resources/img/result3.png)
 
 ---
-## 🖥️ 프로젝트 시연
-- **렌터카 통합 FAQ**
-  <img width="1440" height="512" alt="스크린샷 2026-03-30 오후 4 36 43" src="src/resources/img/result1.png" />
 
+### 📌 웹크롤링
+![웹크롤링](src/resources/img/result4.png)
+<br>
 <br>
 
-- **자동차 등록 현황**
-  <img width="1440" height="512" alt="스크린샷 2026-03-30 오후 4 36 43" src="src/resources/img/result2.png" />
 
-<br>
-
-- **자동차 사고 현황**
-  <img width="1440" height="512" alt="스크린샷 2026-03-30 오후 4 36 43" src="src/resources/img/result3.png" />
-
-<br>
-
-- **웹크롤링**
-  <img width="1440" height="512" alt="스크린샷 2026-03-30 오후 4 36 43" src="src/resources/img/result4.png" />
-  
-<br>
-
----
-## 회고
+# 9. 한 줄 회고
 ### 🙆🏻‍♂️ 정형섭
 프로젝트에서 PM 및 백엔드 모듈 개발을 맡아 전체 일정 관리와 기술 구현을 동시에 수행했습니다. PM 역할에서는 팀원 간 작업 범위를 조율하고 개발 일정을 관리하며 프로젝트가 계획대로 진행될 수 있도록 지속적으로 커뮤니케이션을 진행했습니다. 특히 요구사항 정의와 작업 우선순위 설정 과정에서 프로젝트 방향성을 명확히 하는 데 집중했습니다.
 
