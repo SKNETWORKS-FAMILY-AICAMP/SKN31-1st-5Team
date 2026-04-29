@@ -1,6 +1,6 @@
 # 1. 팀소개
 
-### 팀명: Simple is Best
+### 팀명: Simple is best
 
 <table>
   <tr>
@@ -42,7 +42,6 @@
     </td>
   </tr>
 </table>
-
 <br/>
 <br/>
 
@@ -67,40 +66,31 @@ Streamlit 기반의 데이터 시각화를 구현한 프로젝트이다.
 
 분산된 고객 데이터와 공공데이터를 통합 분석하여 렌터카 수요와 고객 니즈를 도출하고,  
 데이터 기반의 고객 유치 전략 수립을 가능하게 한다.
-
 <br/>
 <br/>
 
 # 3. 🔧 기술 스택
- 
+
 <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/>
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white"/>
 <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white"/>
 <img src="https://img.shields.io/badge/BeautifulSoup-000000"/>
 <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white"/>
 <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white"/>
-
 <br/>
 <br/>
 
 # 4. WBS
-
 <img width="550" height="500" alt="erd" src="src/resources/img/wbs.png" />
 <br>
 <br>
 
-# 5. 요구사항 명세서
-
-<br>
-<br>
-
-# 6. ERD
+# 5. ERD
 <img width="550" height="500" alt="erd" src="src/resources/img/erd_info.png" />
-
 <br>
 <br>
 
-# 7. 주요 프로시저
+# 6. 주요 프로시저
 
 1. **FAQ 데이터 수집**
    - 렌터카 업체별 FAQ 데이터를 수집한다.
@@ -124,7 +114,7 @@ Streamlit 기반의 데이터 시각화를 구현한 프로젝트이다.
 <br>
 <br>
 
-# 8. 수행결과(테스트/시연 페이지)
+# 7. 수행결과(테스트/시연 페이지)
 
 ### 📌 렌터카 통합 FAQ
 ![렌터카 통합 FAQ](src/resources/img/result1.png)
@@ -147,7 +137,7 @@ Streamlit 기반의 데이터 시각화를 구현한 프로젝트이다.
 <br>
 
 
-# 9. 한 줄 회고
+# 8. 한 줄 회고
 ### 🙆🏻‍♂️ 정형섭
 프로젝트에서 PM 및 백엔드 모듈 개발을 맡아 전체 일정 관리와 기술 구현을 동시에 수행했습니다. PM 역할에서는 팀원 간 작업 범위를 조율하고 개발 일정을 관리하며 프로젝트가 계획대로 진행될 수 있도록 지속적으로 커뮤니케이션을 진행했습니다. 특히 요구사항 정의와 작업 우선순위 설정 과정에서 프로젝트 방향성을 명확히 하는 데 집중했습니다.
 
@@ -167,5 +157,3 @@ Streamlit의 기능을 활용하는데 표현방법을 바꿔가며 효과적으
 특히 여러 테이블을 연결하며 다대다 관계와 ERD를 직접 설계해 본 경험은 데이터베이스 구조를 이해하는 데 큰 도움이 되었습니다.
 그 과정에서 키 중복이나 타입 불일치 등 다양한 오류를 해결하며, 탄탄한 기초 설계의 중요성을 실감고, 추가로 Python과 MySQL을 연동하며 겪은 시행착오들 역시 프로그램과 DB가 소통하는 실무적인 흐름을 익히는 데 큰 도움이 되었습니다.
 이번 프로젝트를 통해 기능 구현뿐아니라, 데이터의 흐름과 구조를 보는 눈을 기를 수 있어 유익한 시간이었습니다.
-
-<br>
